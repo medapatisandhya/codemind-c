@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int a,b;
-    scanf("%d%d",&a,&b);
-    if(a>b)
+    int n,m;
+    scanf("%d%d",&n,&m);
+    if(n>m)
     {
-        printf("%d",a);
+        printf("%d",n);
     }
     else
     {
-        printf("%d",b);
+        printf("%d",m);
     }
 }
