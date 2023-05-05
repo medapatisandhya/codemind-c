@@ -30,8 +30,7 @@ int is_prime(int m)
 		int	fc=0,i;
 	for(i=1;i<=m;i++)
 	{
-
-		if(m%i==0)
+if(m%i==0)
 		{
 			fc=fc+1;			
 		}
