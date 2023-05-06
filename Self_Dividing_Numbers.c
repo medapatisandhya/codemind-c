@@ -6,16 +6,16 @@ int sd(int n)
     while(n)
     {
         d=n%10;//0
-        if(d==0)
+       if(d==0)
         {
             return 0;
         }
-        if(t%d==0)
-        {
-            b++;
-        }
-        a++;
-        n=n/10;
+         if(t%d==0)
+         {
+             b++;
+         }
+         a++;
+         n=n/10;
     }
     if(a==b)
     {
