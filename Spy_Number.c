@@ -1,19 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,s=0,i,s1=1,r;
+    int n,rem,sum=0,product=1;
     scanf("%d",&n);
     while(n!=0)
     {
-        r=n%10;
+        rem=n%10;
         n=n/10;
-        s=s+r;
-        s1=s1*r;
-        
+        sum=sum+rem;
+        product=product*rem;
     }
-    if(s==s1)
+    if(sum==product)
     {
-    printf("Spy Number");
+        printf("Spy Number");
     }
     else
     {
