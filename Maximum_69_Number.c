@@ -1,27 +1,31 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int n,m;
+    int n,r,f,s,t,l;
     scanf("%d",&n);
-    int r=0,s=0,cnt=0;
-    while(n)
+    l=n%10;
+    n=n/10;
+    t=n%10;
+    n=n/10;
+    s=n%10;
+    n=n/10;
+    f=n%10;
+    n=n/10; 
+    if(f==6)
     {
-        r=(r*10)+(n%10);
-        n=n/10;
+        f=9;
     }
-    while(r)
+    else if(s==6)
     {
-        if(r%10==6 && cnt ==0)
-        {
-            s=(s*10)+9;
-            cnt++;
-        }
-        else
-        {
-            s=(s*10)+(r%10);
-        }
-        r=r/10;
+        s=9;
     }
-    printf("%d",s);
-    
+    else if(t==6)
+    {
+        t=9;
+    }
+    else if(l==6)
+    {
+        l=9;
+    }
+    printf("%d%d%d%d",f,s,t,l);
 }
