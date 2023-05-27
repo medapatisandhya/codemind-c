@@ -2,11 +2,11 @@
 int main()
 {
     int n,i,k=0,j,l[100],m[100];
-    scanf("%d",&n);
+    scanf("%d" ,&n);
     int ar[n];
     for(i=0;i<n;i++)
     {
-        scanf("%d",&ar[i]);
+        scanf("%d" ,&ar[i]);
     }
     int c=0;
     for(i=0;i<n;i++)
@@ -24,10 +24,11 @@ int main()
     }
     for(i=0;i<c;i++)
     {
-        printf("%d ",m[i]);
+        printf("%d " ,m[i]);
     }
     for(i=0;i<k;i++)
     {
-        printf("%d ",l[i]);
+        printf("%d " ,l[i]);
     }
+    
 }
