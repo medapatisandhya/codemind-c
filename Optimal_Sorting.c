@@ -11,11 +11,11 @@ int sort(int *v,int n)
         for(k=0;k<n-1;k++)
         {
             if(v[k]>v[k+1])
-        	{
-            	t=v[k+1];
-            	v[k+1]=v[k];
-            	v[k]=t;
-        	}
+            {
+                t=v[k+1];
+                v[k+1]=v[k];
+                v[k]=t;
+            }
         }
     }
     t=0;
@@ -31,20 +31,22 @@ int sort(int *v,int n)
         t=v[n-1]-v[0];
     }
     return t;
+    
 }
 int main()
 {
     int n,k,j,r,a,s=0;
-    scanf("%d",&n);
+    scanf("%d" ,&n);
     for(j=0;j<n;j++)
     {
         int v[2004];
-        scanf("%d",&a);
+        scanf("%d" ,&a);
         for(k=0;k<a;k++)
         {
-            scanf("%d",&v[k]);
+            scanf("%d" ,&v[k]);
         }
         printf("%d
-",sort(v,a));
+" ,sort(v,a));
     }
+    
 }
