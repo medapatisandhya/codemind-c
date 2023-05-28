@@ -1,16 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int a,b,lcm;
-    scanf("%d%d",&a,&b);
-    lcm=(a>b)?a:b;
-    while(1)
+    int n,m,g,l,i;
+    scanf("%d%d" ,&n,&m);
+    for(i=1;i<=n&&i<=m;i++)
     {
-        if(lcm%a==0 &&lcm%b==0)
+        if(m%i==0 && n%i==0)
         {
-            printf("%d",lcm);
-            break;
+            g=i;
         }
-        lcm++;
     }
+    l=(m*n)/g;
+    {
+        printf("%d" ,l);
+    }
+    
 }
