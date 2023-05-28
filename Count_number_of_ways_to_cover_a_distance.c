@@ -1,5 +1,5 @@
-#include<stdio.h>
-int cn(int k)
+#include <stdio.h>
+int cls(int k)
 {
     if(k<0)
     {
@@ -9,12 +9,13 @@ int cn(int k)
     {
         return 1;
     }
-    return cn(k-1)+cn(k-2)+cn(k-3);
+    return cls(k-1)+cls(k-2)+cls(k-3);
+    
 }
 int main()
 {
-    int v,r;
-    scanf("%d",&r);
-    v=cn(r);
-    printf("%d",v);
+    int r,p;
+    scanf("%d" ,&r);
+    p=cls(r);
+    printf("%d" ,p);
 }
